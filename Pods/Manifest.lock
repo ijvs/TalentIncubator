@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Argo (4.1.2):
+    - Runes (>= 4.0.0)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.4)
+  - Runes (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Argo
+  - Moya (~> 11.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Argo
+    - Moya
+    - Result
+    - Runes
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Argo: 5db06502fc1222d83011f574243089dab25202ff
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Runes: 72a67a5bbbe1b5fdae08b5a01b10c60d83fc69aa
+
+PODFILE CHECKSUM: b76e7d83ecf19b657ecb98ac64379ff19d29d18a
+
+COCOAPODS: 1.5.3
