@@ -6,8 +6,8 @@ target 'TalentIncubator' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.7'
-  pod 'Argo'
-  pod 'Moya', '~> 11.0'  
+  pod 'Moya', '~> 11.0'
+  pod 'ObjectMapper', '~> 3.2'
 
   target 'TalentIncubatorTests' do
     inherit! :search_paths
