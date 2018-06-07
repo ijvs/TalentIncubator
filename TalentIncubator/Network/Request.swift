@@ -21,16 +21,11 @@ public enum HTTPMethod: String {
     case patch = "PATCH"
 }
 
-public enum RequestParams {
-    case body(_ : [String: Any]?)
-    case url(_ : [String: Any]?)
-}
-
 
 public protocol Request {
     var path: String { get }
     var httpMethod: HTTPMethod { get }
-    var parameters: RequestParams { get }
+    var parameters: [String:Any]? { get }
     var headers: [String:Any]? { get }
     var dataType: DataType { get }
 }
