@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public struct Venue {
+public struct VenueResponseModel {
     public var name: String
     public var id: String
     public var postalCode: String
@@ -19,7 +19,7 @@ public struct Venue {
     public var address: String
 }
 
-extension Venue: Mappable {
+extension VenueResponseModel: Mappable {
     public init?(map: Map) {
         guard let name: String = map["name"].value(),
             let id: String = map["id"].value(),

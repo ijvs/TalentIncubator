@@ -11,8 +11,8 @@ import Alamofire
 import ObjectMapper
 
 protocol EventRepository {
-    typealias EventsCompletion = ((_ events: [Event], _ error: Error?) -> ())
-    typealias EventDetailCompletion = ((_ events: Event?, _ error: Error?) -> ())
+    typealias EventsCompletion = ((_ events: [EventResponseModel], _ error: Error?) -> ())
+    typealias EventDetailCompletion = ((_ events: EventResponseModel?, _ error: Error?) -> ())
 
     func getEventDetail(id: String, completion: EventDetailCompletion?)
     func searchEvents(geoHash: String?, keyword: String?, completion: EventsCompletion?)
@@ -31,7 +31,7 @@ class EventServer: EventRepository {
             .responseJSON { (response) in
                 switch response.result {
                 case .success(let data):
-                    if let event = Mapper<Event>().map(JSONObject: data) {
+                    if let event = Mapper<EventResponseModel>().map(JSONObject: data) {
                         completion?(event, nil)
                     }
                 case .failure(let error):
@@ -47,7 +47,7 @@ class EventServer: EventRepository {
                 case .success(let data):
                     if let data = data as? [String: [String: Any]],
                         let _embedded = data["_embedded"],
-                        let events = Mapper<Event>().mapArray(JSONObject: _embedded["events"]) {
+                        let events = Mapper<EventResponseModel>().mapArray(JSONObject: _embedded["events"]) {
                         completion?(events, nil)
                         print(events)
                     }

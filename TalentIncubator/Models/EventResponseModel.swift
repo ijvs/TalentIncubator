@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct Event: Mappable {
+struct EventResponseModel: Mappable {
     var name: String
     var id: String
     var eventURLString: String
@@ -18,14 +18,14 @@ struct Event: Mappable {
     var endDate: String?
     var info: String?
     var priceRanges: Any?
-    var venues: [Venue]
+    var venues: [VenueResponseModel]
     
     init?(map: Map) {
         guard let name: String = map["name"].value(),
             let id: String = map["id"].value(),
             let eventURLString: String = map["url"].value(),
             let startDate: String = map["dates.start.dateTime"].value(),
-            let venues: [Venue] = Mapper<Venue>().mapArray(JSONObject: map["_embedded.venues"].value())
+            let venues: [VenueResponseModel] = Mapper<VenueResponseModel>().mapArray(JSONObject: map["_embedded.venues"].value())
         else {
             return nil
         }
