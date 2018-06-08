@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        EventServer().searchEvents()
+        let eventServer = EventServer()
+            eventServer.searchEvents()
+            eventServer.getEventDetail(id: "G5vYZ4d2JzEA-", completion: nil)
     }
 
 }
