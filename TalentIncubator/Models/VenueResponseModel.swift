@@ -17,6 +17,8 @@ public struct VenueResponseModel {
     public var state: String
     public var country: String
     public var address: String
+    public var latitude: Double?
+    public var longitude: Double?
 }
 
 extension VenueResponseModel: Mappable {

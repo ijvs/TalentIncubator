@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
 
+    @IBOutlet weak var map: MKMapView!
+    let viewModel = EventsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let eventServer = EventServer()
-            eventServer.searchEvents()
-            eventServer.getEventDetail(id: "G5vYZ4d2JzEA-", completion: nil)
+//        viewModel.getEvents()
     }
 
 }

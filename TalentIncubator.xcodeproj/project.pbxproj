@@ -10,15 +10,16 @@
 		7468C782FA96ABCA270AC326 /* Pods_TalentIncubator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602756E4A401A1EC7B810B61 /* Pods_TalentIncubator.framework */; };
 		8E2FE60E20C86DE0004419EF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FE60D20C86DE0004419EF /* Request.swift */; };
 		8E2FE61020C8723B004419EF /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FE60F20C8723B004419EF /* EventsRequest.swift */; };
+		8EA8DD4520CAFE8E00C774C3 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8DD4420CAFE8E00C774C3 /* EventsViewModel.swift */; };
 		8EB7D44D20C86881009AD0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7D44C20C86881009AD0D1 /* AppDelegate.swift */; };
-		8EB7D44F20C86881009AD0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7D44E20C86881009AD0D1 /* ViewController.swift */; };
+		8EB7D44F20C86881009AD0D1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7D44E20C86881009AD0D1 /* MapViewController.swift */; };
 		8EB7D45220C86881009AD0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB7D45020C86881009AD0D1 /* Main.storyboard */; };
 		8EB7D45520C86882009AD0D1 /* TalentIncubator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7D45320C86882009AD0D1 /* TalentIncubator.xcdatamodeld */; };
 		8EB7D45720C86882009AD0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB7D45620C86882009AD0D1 /* Assets.xcassets */; };
 		8EB7D45A20C86882009AD0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB7D45820C86882009AD0D1 /* LaunchScreen.storyboard */; };
 		8EB7D46520C86883009AD0D1 /* TalentIncubatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7D46420C86883009AD0D1 /* TalentIncubatorTests.swift */; };
-		8EED267C20C879BE00C80F78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED267B20C879BE00C80F78 /* Event.swift */; };
-		8EED267E20C87AFE00C80F78 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED267D20C87AFE00C80F78 /* Venue.swift */; };
+		8EED267C20C879BE00C80F78 /* EventResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED267B20C879BE00C80F78 /* EventResponseModel.swift */; };
+		8EED267E20C87AFE00C80F78 /* VenueResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED267D20C87AFE00C80F78 /* VenueResponseModel.swift */; };
 		8EED268020C89B4800C80F78 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED267F20C89B4800C80F78 /* EventRepository.swift */; };
 		BC480EAF29E27ED95B9897F8 /* Pods_TalentIncubatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6E9F17B2C9501ED8438B7B /* Pods_TalentIncubatorTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,9 +41,10 @@
 		7D6E9F17B2C9501ED8438B7B /* Pods_TalentIncubatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalentIncubatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2FE60D20C86DE0004419EF /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		8E2FE60F20C8723B004419EF /* EventsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRequest.swift; sourceTree = "<group>"; };
+		8EA8DD4420CAFE8E00C774C3 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		8EB7D44920C86881009AD0D1 /* TalentIncubator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentIncubator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB7D44C20C86881009AD0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EB7D44E20C86881009AD0D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EB7D44E20C86881009AD0D1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8EB7D45120C86881009AD0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EB7D45420C86882009AD0D1 /* TalentIncubator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TalentIncubator.xcdatamodel; sourceTree = "<group>"; };
 		8EB7D45620C86882009AD0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,8 +53,8 @@
 		8EB7D46020C86883009AD0D1 /* TalentIncubatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalentIncubatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB7D46420C86883009AD0D1 /* TalentIncubatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentIncubatorTests.swift; sourceTree = "<group>"; };
 		8EB7D46620C86883009AD0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EED267B20C879BE00C80F78 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		8EED267D20C87AFE00C80F78 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		8EED267B20C879BE00C80F78 /* EventResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponseModel.swift; sourceTree = "<group>"; };
+		8EED267D20C87AFE00C80F78 /* VenueResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueResponseModel.swift; sourceTree = "<group>"; };
 		8EED267F20C89B4800C80F78 /* EventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
 		A728E4F232BE63884D0B5359 /* Pods-TalentIncubator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentIncubator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalentIncubator/Pods-TalentIncubator.debug.xcconfig"; sourceTree = "<group>"; };
 		DA129BF0EBBDF7C77343BB81 /* Pods-TalentIncubatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentIncubatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalentIncubatorTests/Pods-TalentIncubatorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 				8EB7D47020C86B60009AD0D1 /* ViewModel */,
 				8EB7D46F20C86B54009AD0D1 /* Models */,
 				8EB7D44C20C86881009AD0D1 /* AppDelegate.swift */,
-				8EB7D44E20C86881009AD0D1 /* ViewController.swift */,
+				8EB7D44E20C86881009AD0D1 /* MapViewController.swift */,
 				8EB7D45020C86881009AD0D1 /* Main.storyboard */,
 				8EB7D45620C86882009AD0D1 /* Assets.xcassets */,
 				8EB7D45820C86882009AD0D1 /* LaunchScreen.storyboard */,
@@ -138,8 +140,8 @@
 		8EB7D46F20C86B54009AD0D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8EED267B20C879BE00C80F78 /* Event.swift */,
-				8EED267D20C87AFE00C80F78 /* Venue.swift */,
+				8EED267B20C879BE00C80F78 /* EventResponseModel.swift */,
+				8EED267D20C87AFE00C80F78 /* VenueResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +149,7 @@
 		8EB7D47020C86B60009AD0D1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8EA8DD4420CAFE8E00C774C3 /* EventsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -340,11 +343,12 @@
 				8E2FE61020C8723B004419EF /* EventsRequest.swift in Sources */,
 				8EB7D45520C86882009AD0D1 /* TalentIncubator.xcdatamodeld in Sources */,
 				8E2FE60E20C86DE0004419EF /* Request.swift in Sources */,
-				8EED267E20C87AFE00C80F78 /* Venue.swift in Sources */,
-				8EB7D44F20C86881009AD0D1 /* ViewController.swift in Sources */,
-				8EED267C20C879BE00C80F78 /* Event.swift in Sources */,
+				8EED267E20C87AFE00C80F78 /* VenueResponseModel.swift in Sources */,
+				8EB7D44F20C86881009AD0D1 /* MapViewController.swift in Sources */,
+				8EED267C20C879BE00C80F78 /* EventResponseModel.swift in Sources */,
 				8EED268020C89B4800C80F78 /* EventRepository.swift in Sources */,
 				8EB7D44D20C86881009AD0D1 /* AppDelegate.swift in Sources */,
+				8EA8DD4520CAFE8E00C774C3 /* EventsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
